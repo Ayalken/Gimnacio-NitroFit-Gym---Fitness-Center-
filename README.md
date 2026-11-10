@@ -18,9 +18,11 @@ Sube `index.html`, `styles.css`, `script.js` y `logo-nitrofit.jpg` (recorte del 
 - Pregunta de investigación, objetivos, hipótesis de trabajo y metodología.
 - Método, instrumentos, justificación y límites del alcance.
 - Planificación preliminar e hitos indicados por la guía.
-- Modelo ambiental, lista de eventos, DFD de contexto y niveles 1 y 2.
-- Diccionario de datos y especificación de proceso.
-- Conceptos y principios de orientación a objetos, casos de uso, clases y secuencia.
+- Modelo ambiental y lista de eventos; DFD de contexto, nivel 1 con seis procesos y nivel 2 para pagos.
+- Catálogo de procesos, diccionario de datos y especificación paso a paso del registro de pagos.
+- Roles diferenciados para dueño/administrador, recepción/caja y entrenador; el cliente figura como registro interno, no como usuario.
+- Control de membresías, pagos, comprobantes internos, turnos y cierres de caja, ajustes autorizados, reportes y alertas.
+- Conceptos y principios de orientación a objetos, casos de uso, clases y secuencia centrados en las operaciones del gimnasio.
 - Equipo de auditores.
 - Enlace de ubicación de NitroFit en Google Maps.
 
