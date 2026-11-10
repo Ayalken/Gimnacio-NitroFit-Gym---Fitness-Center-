@@ -4,11 +4,11 @@ Sitio académico para el **Sistema de Inscripción y Control de Membresías** de
 
 ## Abrir el sitio
 
-Abre `index.html` en un navegador. El sitio no requiere instalación ni compilación.
+Abre `index.html` en un navegador. El contenido está separado en páginas independientes (`marco.html`, `investigacion.html`, `estructurado.html`, `uml.html` y `equipo.html`) y se recorre con índices y menús desplegables. El sitio no requiere instalación ni compilación.
 
 ## Publicarlo como sitio estático
 
-Sube `index.html`, `styles.css`, `script.js` y `logo-nitrofit.jpg` (recorte del logo a partir de la imagen original) a un servicio de alojamiento estático, conservando los cuatro archivos en la misma carpeta. La guía del proyecto menciona la creación de un blog o sitio web y la publicación de su URL.
+Sube todos los archivos HTML, `styles.css`, `script.js` y `logo-nitrofit.jpg` (recorte del logo a partir de la imagen original) a un servicio de alojamiento estático, conservando la misma estructura de carpeta. La guía del proyecto menciona la creación de un blog o sitio web y la publicación de su URL.
 
 ## Contenido
 

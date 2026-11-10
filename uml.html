@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#111315"><meta name="description" content="Proyecto de análisis y diseño del sistema NitroFit."><title>NitroFit | Orientación a objetos</title><link rel="icon" href="logo-nitrofit.jpg" type="image/jpeg"><link rel="stylesheet" href="styles.css"></head>
+<body><a class="skip-link" href="#contenido">Saltar al contenido</a><header class="topbar">
+    <a class="brand" href="index.html" aria-label="NitroFit, inicio">
+      <img src="logo-nitrofit.jpg" alt="Logo de Gimnasio NitroFit">
+      <span><b>NITRO<span>FIT</span></b><small>PROYECTO ACADÉMICO · 2026</small></span>
+    </a>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="nav-principal">Menú <span>☰</span></button>
+    <nav id="nav-principal" aria-label="Índice del proyecto">
+      <a href="index.html">Inicio</a>
+      <details class="nav-dropdown"><summary>Proyecto</summary><div class="dropdown-panel">
+        <a href="index.html#proyecto">Hoja de datos</a><a href="marco.html#antecedentes">Marco teórico</a>
+        <a href="investigacion.html#investigacion">Problema y objetivos</a><a href="investigacion.html#planificacion">Planificación</a>
+      </div></details>
+      <details class="nav-dropdown"><summary>Modelos</summary><div class="dropdown-panel">
+        <a href="estructurado.html#ambiente">Modelo ambiental</a><a href="estructurado.html#eventos">Lista de eventos</a>
+        <a href="estructurado.html#dfd-contexto">DFD · Nivel 0</a><a href="estructurado.html#dfd-nivel1">DFD · Nivel 1</a>
+        <a href="estructurado.html#dfd-nivel2">DFD · Nivel 2</a><a href="uml.html#principios">Principios OO</a>
+        <a href="uml.html#casos-uso">Casos de uso</a><a href="uml.html#clases">Diagrama de clases</a><a href="uml.html#secuencia">Secuencia</a>
+      </div></details>
+      <a href="equipo.html#equipo">Equipo y contacto</a>
+    </nav>
+  </header><main id="contenido"><section class="section uml-section" id="uml">
+      <div class="section-heading"><p class="eyebrow orange-text">06 / ANÁLISIS ORIENTADO A OBJETOS</p><h2>Los actores, las clases<br><em>y sus interacciones.</em></h2><p>Modelo UML inicial de la solución propuesta. La notación se presenta de manera simplificada para facilitar su lectura.</p></div>
+      <div class="oop-intro"><div class="oop-definitions" id="principios"><article><h3>Clases</h3><p>Plantillas que definen datos y comportamientos comunes.</p></article><article><h3>Objetos</h3><p>Instancias concretas creadas a partir de una clase.</p></article><article><h3>Atributos</h3><p>Datos que describen el estado de cada objeto.</p></article><article><h3>Métodos</h3><p>Acciones que un objeto puede realizar.</p></article></div>
+        <div class="principles-block"><p class="eyebrow orange-text">PRINCIPIOS DE ORIENTACIÓN A OBJETOS</p><h3>Cuatro ideas aplicadas al dominio NitroFit</h3><div class="principles-grid">
+          <article><span>01</span><h4>Encapsulación</h4><p>La membresía valida sus propias fechas y estado; el resto del sistema consulta ese estado mediante operaciones definidas.</p></article>
+          <article><span>02</span><h4>Herencia</h4><p>Si las reglas lo justifican, roles como Administrador y Recepcionista podrían especializar un usuario común. Se deja como alternativa de diseño.</p></article>
+          <article><span>03</span><h4>Polimorfismo</h4><p>Distintos medios de pago podrían implementar una operación común de registro, si NitroFit confirma más de un método.</p></article>
+          <article><span>04</span><h4>Abstracción</h4><p>El modelo conserva los datos esenciales de Cliente, Plan y Membresía sin exponer detalles técnicos de almacenamiento.</p></article>
+        </div></div>
+      </div>
+      <div class="diagram-card"><div class="diagram-title"><div><span class="tag">UML · CASOS DE USO</span><h3>Funciones por actor</h3></div><span class="diagram-caption">Límite: sistema de membresías NitroFit</span></div>
+        <div class="svg-scroll" id="casos-uso"><svg class="uml-use" viewBox="0 0 980 470" role="img" aria-labelledby="useTitle useDesc"><title id="useTitle">Casos de uso para administración de NitroFit</title><desc id="useDesc">Dueño, recepción y entrenador son usuarios del sistema. El dueño administra precios, autoriza ajustes y revisa caja; recepción registra clientes, membresías y cobros; entrenador verifica vigencia y asistencia.</desc>
+          <rect class="boundary" x="245" y="25" width="710" height="380" rx="16"/><text class="boundary-title" x="270" y="52">Sistema interno de inscripción, membresías y caja</text>
+          <g class="actor"><circle cx="95" cy="90" r="19"/><path d="M95 109v52m-28 -30h56m-28 30 -23 35m23 -35 23 35"/></g><text class="actor-label" x="95" y="204" text-anchor="middle">Dueño / admin.</text>
+          <g class="actor"><circle cx="95" cy="220" r="19"/><path d="M95 239v52m-28 -30h56m-28 30 -23 35m23 -35 23 35"/></g><text class="actor-label" x="95" y="334" text-anchor="middle">Recepción / caja</text>
+          <g class="actor"><circle cx="95" cy="330" r="19"/><path d="M95 349v35m-28 -20h56m-28 20 -23 35m23 -35 23 35"/></g><text class="actor-label" x="95" y="430" text-anchor="middle">Entrenador</text>
+          <g class="usecase"><ellipse cx="430" cy="110" rx="140" ry="30"/><text x="430" y="115" text-anchor="middle">Administrar planes y tarifas</text></g>
+          <g class="usecase"><ellipse cx="735" cy="110" rx="140" ry="30"/><text x="735" y="115" text-anchor="middle">Autorizar descuentos / anulaciones</text></g>
+          <g class="usecase"><ellipse cx="735" cy="185" rx="140" ry="30"/><text x="735" y="190" text-anchor="middle">Revisar ingresos y cierres de caja</text></g>
+          <g class="usecase"><ellipse cx="430" cy="200" rx="140" ry="30"/><text x="430" y="205" text-anchor="middle">Administrar clientes y membresías</text></g>
+          <g class="usecase"><ellipse cx="735" cy="265" rx="140" ry="30"/><text x="735" y="270" text-anchor="middle">Registrar cobros y comprobantes</text></g>
+          <g class="usecase"><ellipse cx="430" cy="290" rx="140" ry="30"/><text x="430" y="295" text-anchor="middle">Cerrar turno de caja</text></g>
+          <g class="usecase"><ellipse cx="735" cy="345" rx="140" ry="30"/><text x="735" y="350" text-anchor="middle">Consultar vigencia / membresía</text></g>
+          <g class="usecase"><ellipse cx="430" cy="365" rx="140" ry="30"/><text x="430" y="370" text-anchor="middle">Registrar asistencia</text></g>
+          <path class="association" d="M114 90 C220 80 285 105 290 110 M114 110 C250 140 300 180 290 198 M114 132 C330 220 520 210 595 185 M114 220 C210 205 270 200 290 200 M114 237 C350 230 520 260 595 265 M114 250 C230 280 275 285 290 290 M114 350 C320 350 510 345 595 345 M114 372 C220 380 260 370 290 365 M114 122 C360 175 500 250 595 265"/>
+        </svg></div>
+      </div>
+      <div class="diagram-card"><div class="diagram-title"><div><span class="tag">UML · DIAGRAMA DE CLASES</span><h3>Estructura conceptual</h3></div><span class="diagram-caption">Clases y relaciones candidatas</span></div>
+        <div class="svg-scroll" id="clases"><svg class="classes classes-complete" viewBox="0 0 1120 670" role="img" aria-labelledby="classTitle classDesc"><title id="classTitle">Diagrama UML de clientes, membresías, cobros, caja y asistencia</title><desc id="classDesc">El modelo incluye Cliente, Plan, Membresía, Pago, Cierre de Caja, Asistencia y Usuario con rol de dueño, recepcionista o entrenador. Muestra relaciones y multiplicidades.</desc>
+          <g class="classbox"><rect x="30" y="30" width="260" height="140" rx="8"/><rect class="classhead" x="30" y="30" width="260" height="40" rx="8"/><text x="160" y="56" text-anchor="middle">Cliente</text><text class="attribute" x="48" y="95">- idCliente: entero</text><text class="attribute" x="48" y="117">- nombre / documento: texto</text><text class="attribute" x="48" y="139">- contacto / estado: texto</text><text class="attribute" x="48" y="159">+ consultarFicha()</text></g>
+          <g class="classbox"><rect x="430" y="30" width="260" height="140" rx="8"/><rect class="classhead" x="430" y="30" width="260" height="40" rx="8"/><text x="560" y="56" text-anchor="middle">Membresía</text><text class="attribute" x="448" y="95">- idMembresia: entero</text><text class="attribute" x="448" y="117">- fechaInicio / vencimiento</text><text class="attribute" x="448" y="139">- estado: EstadoMembresia</text><text class="attribute" x="448" y="159">+ calcularVigencia()</text></g>
+          <g class="classbox"><rect x="830" y="30" width="260" height="140" rx="8"/><rect class="classhead" x="830" y="30" width="260" height="40" rx="8"/><text x="960" y="56" text-anchor="middle">Plan</text><text class="attribute" x="848" y="95">- idPlan: entero</text><text class="attribute" x="848" y="117">- nombre / duración</text><text class="attribute" x="848" y="139">- precio / condiciones</text><text class="attribute" x="848" y="159">+ calcularImporte()</text></g>
+          <g class="classbox"><rect x="30" y="270" width="260" height="140" rx="8"/><rect class="classhead" x="30" y="270" width="260" height="40" rx="8"/><text x="160" y="296" text-anchor="middle">Asistencia</text><text class="attribute" x="48" y="335">- idAsistencia: entero</text><text class="attribute" x="48" y="357">- fechaHora: fecha / hora</text><text class="attribute" x="48" y="379">- tipoMarcacion: texto</text><text class="attribute" x="48" y="399">+ registrarEntrada()</text></g>
+          <g class="classbox"><rect x="430" y="270" width="260" height="140" rx="8"/><rect class="classhead" x="430" y="270" width="260" height="40" rx="8"/><text x="560" y="296" text-anchor="middle">Pago</text><text class="attribute" x="448" y="335">- idPago: entero</text><text class="attribute" x="448" y="357">- fechaHora / importe</text><text class="attribute" x="448" y="379">- medio / referencia: texto</text><text class="attribute" x="448" y="399">+ registrar / anular()</text></g>
+          <g class="classbox"><rect x="830" y="270" width="260" height="140" rx="8"/><rect class="classhead" x="830" y="270" width="260" height="40" rx="8"/><text x="960" y="296" text-anchor="middle">CierreCaja</text><text class="attribute" x="848" y="335">- idCierre: entero</text><text class="attribute" x="848" y="357">- turno / fecha: fecha</text><text class="attribute" x="848" y="379">- declarado / sistema / diferencia</text><text class="attribute" x="848" y="399">+ calcularDiferencia()</text></g>
+          <g class="classbox"><rect x="430" y="500" width="260" height="140" rx="8"/><rect class="classhead" x="430" y="500" width="260" height="40" rx="8"/><text x="560" y="526" text-anchor="middle">Usuario</text><text class="attribute" x="448" y="565">- idUsuario: entero</text><text class="attribute" x="448" y="587">- nombre / usuario: texto</text><text class="attribute" x="448" y="609">- rol: Dueño | Recepción | Entrenador</text><text class="attribute" x="448" y="629">+ autorizar / registrar()</text></g>
+          <path class="relation" d="M290 100 H430 M830 100 H690 M160 170 V270 M560 170 V270 M690 340 H830 M560 500 V410 M690 560 C785 525 840 475 900 410 M430 570 C330 535 245 475 160 410"/>
+          <text class="multiplicity" x="300" y="91">1</text><text class="multiplicity" x="400" y="91">0..*</text><text class="relation-label" x="328" y="88">tiene</text>
+          <text class="multiplicity" x="700" y="91">0..*</text><text class="multiplicity" x="810" y="91">1</text><text class="relation-label" x="724" y="88">se contrata</text>
+          <text class="multiplicity" x="170" y="190">1</text><text class="multiplicity" x="170" y="258">0..*</text><text class="relation-label" x="180" y="227">registra</text>
+          <text class="multiplicity" x="570" y="190">1</text><text class="multiplicity" x="570" y="258">0..*</text><text class="relation-label" x="580" y="227">genera</text>
+          <text class="multiplicity" x="700" y="330">0..*</text><text class="multiplicity" x="810" y="330">1</text><text class="relation-label" x="730" y="326">se incluye en</text>
+          <text class="multiplicity" x="570" y="430">0..*</text><text class="multiplicity" x="570" y="485">1</text><text class="relation-label" x="580" y="462">registra</text>
+          <text class="class-note" x="560" y="660" text-anchor="middle">El usuario es personal interno. Cliente representa la ficha administrada; no implica portal ni inicio de sesión del cliente.</text>
+        </svg></div>
+      </div>
+      <div class="diagram-card sequence-card" id="secuencia"><div class="diagram-title"><div><span class="tag">UML · SECUENCIA</span><h3>Escenario: registrar cobro y reflejarlo en caja</h3></div><span class="diagram-caption">El dueño consulta los movimientos registrados</span></div>
+        <div class="sequence"><div class="lifeline-head">Recepción / Caja</div><div class="lifeline-head">Sistema</div><div class="lifeline-head">Datos</div><div class="lifeline-head">Dueño</div>
+          <div class="lifelines"><span></span><span></span><span></span><span></span></div>
+          <div class="message m1"><span>Ingresa cliente, membresía e importe</span></div><div class="message m2"><span>Solicita vigencia y saldo</span></div><div class="message m3"><span>Devuelve estado de membresía</span></div><div class="message m4"><span>Confirma medio y referencia</span></div><div class="message m5"><span>Guarda pago y responsable</span></div><div class="message m6"><span>Asocia pago a caja abierta</span></div><div class="message m7"><span>Emite comprobante interno</span></div><div class="message m8"><span>Actualiza panel de ingresos</span></div>
+        </div>
+      </div>
+      <div class="requirements"><article><p class="eyebrow orange-text">REQUISITOS FUNCIONALES</p><ul><li>Administrar fichas de clientes, planes y condiciones de precio.</li><li>Crear y renovar membresías con vigencia y estado.</li><li>Registrar cobros con importe, medio, fecha y responsable.</li><li>Generar comprobantes internos y conservar el historial.</li><li>Abrir y cerrar caja por turno; calcular diferencias.</li><li>Registrar descuentos, anulaciones y devoluciones con autorización.</li><li>Consultar ingresos, pagos, vencimientos y asistencia según permisos.</li></ul></article><article><p class="eyebrow orange-text">REQUISITOS DE CALIDAD Y CONTROL</p><ul><li>Separar permisos de dueño, recepción y entrenador.</li><li>Registrar quién crea, modifica, autoriza o anula una operación.</li><li>Evitar pagos duplicados y exigir motivo para ajustes.</li><li>Validar datos obligatorios y mantener identificadores únicos.</li><li>Permitir revisar el cierre y el detalle que compone cada total.</li><li>Proteger datos personales y restringir su consulta al personal autorizado.</li><li>Definir respaldos y retención de registros con el dueño.</li></ul></article></div>
+    </section></main><footer><a class="footer-brand" href="index.html">NITRO<span>FIT</span></a><span>Proyecto académico · Gestión 2026</span><a href="equipo.html#equipo">Equipo auditor ↗</a></footer><script src="script.js"></script></body></html>

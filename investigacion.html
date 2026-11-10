@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#111315"><meta name="description" content="Proyecto de análisis y diseño del sistema NitroFit."><title>NitroFit | Investigación y planificación</title><link rel="icon" href="logo-nitrofit.jpg" type="image/jpeg"><link rel="stylesheet" href="styles.css"></head>
+<body><a class="skip-link" href="#contenido">Saltar al contenido</a><header class="topbar">
+    <a class="brand" href="index.html" aria-label="NitroFit, inicio">
+      <img src="logo-nitrofit.jpg" alt="Logo de Gimnasio NitroFit">
+      <span><b>NITRO<span>FIT</span></b><small>PROYECTO ACADÉMICO · 2026</small></span>
+    </a>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="nav-principal">Menú <span>☰</span></button>
+    <nav id="nav-principal" aria-label="Índice del proyecto">
+      <a href="index.html">Inicio</a>
+      <details class="nav-dropdown"><summary>Proyecto</summary><div class="dropdown-panel">
+        <a href="index.html#proyecto">Hoja de datos</a><a href="marco.html#antecedentes">Marco teórico</a>
+        <a href="investigacion.html#investigacion">Problema y objetivos</a><a href="investigacion.html#planificacion">Planificación</a>
+      </div></details>
+      <details class="nav-dropdown"><summary>Modelos</summary><div class="dropdown-panel">
+        <a href="estructurado.html#ambiente">Modelo ambiental</a><a href="estructurado.html#eventos">Lista de eventos</a>
+        <a href="estructurado.html#dfd-contexto">DFD · Nivel 0</a><a href="estructurado.html#dfd-nivel1">DFD · Nivel 1</a>
+        <a href="estructurado.html#dfd-nivel2">DFD · Nivel 2</a><a href="uml.html#principios">Principios OO</a>
+        <a href="uml.html#casos-uso">Casos de uso</a><a href="uml.html#clases">Diagrama de clases</a><a href="uml.html#secuencia">Secuencia</a>
+      </div></details>
+      <a href="equipo.html#equipo">Equipo y contacto</a>
+    </nav>
+  </header><main id="contenido"><section class="section" id="investigacion">
+      <div class="section-heading"><p class="eyebrow orange-text">03 / INVESTIGACIÓN</p><h2>Entender el problema<br><em>antes de diseñar.</em></h2><p>La situación descrita es una hipótesis inicial de trabajo y se verificará durante el levantamiento de información.</p></div>
+      <div class="problem-layout">
+        <article class="problem-card"><span class="tag">SITUACIÓN A INVESTIGAR</span><h3>¿Cómo se registran y controlan actualmente clientes, membresías y cobros?</h3><p>La investigación debe establecer cómo el dueño y el personal registran inscripciones, pagos recibidos, renovaciones y cierres de caja, qué reportes necesita el dueño y qué dificultades aparecen en ese proceso. Este diagnóstico aún debe contrastarse con la operación real de NitroFit.</p></article>
+        <div class="tree-card"><h3>Árbol de problemas · hipótesis</h3><div class="problem-tree"><div class="tree-node effect">Efectos posibles<br><small>cobros difíciles de conciliar · vigencias poco visibles · historial laborioso de consultar</small></div><div class="tree-line"></div><div class="tree-node core">Problema central por validar<br><b>Seguimiento disperso de membresías, pagos y caja</b></div><div class="tree-line"></div><div class="tree-node cause">Causas posibles<br><small>registros separados · controles manuales · cierres sin detalle por operación</small></div></div></div>
+      </div>
+      <div class="objective-tree-card"><div><span class="tag">ÁRBOL DE OBJETIVOS</span><h3>Convertir la situación problemática en una meta de diseño</h3><p>Es una proyección de los beneficios buscados, sujeta a validación con el equipo del gimnasio.</p></div><div class="objective-tree"><div class="goal-node ends">FINES PROPUESTOS <small>cobros conciliables · vigencias visibles · reportes de ingresos oportunos</small></div><div class="tree-line"></div><div class="goal-node center">OBJETIVO CENTRAL <b>Diseñar un control integrado de clientes, membresías y caja</b></div><div class="tree-line"></div><div class="goal-node means">MEDIOS PROPUESTOS <small>registro de cobros · historial por responsable · cierre diario consultable</small></div></div></div>
+      <div class="research-grid">
+        <article class="research-item"><p class="eyebrow orange-text">FORMULACIÓN</p><h3>Pregunta de investigación</h3><p>¿Cómo puede un sistema interno ayudar al dueño y al personal de Gimnasio NitroFit a controlar inscripciones, membresías, pagos recibidos y cierres de caja?</p></article>
+        <article class="research-item"><p class="eyebrow orange-text">PROPÓSITO</p><h3>Objetivo general</h3><p>Analizar y diseñar un sistema para administrar clientes, membresías, cobros y caja en Gimnasio NitroFit, aplicando análisis estructurado y orientación a objetos con UML.</p></article>
+      </div>
+      <div class="research-grid research-extra"><article class="research-item"><p class="eyebrow orange-text">ANTECEDENTES</p><h3>Contexto del estudio</h3><p>La propuesta parte de la necesidad de comprender cómo un gimnasio organiza las altas de clientes, la oferta de planes, los cobros y las renovaciones. El estado actual de NitroFit se documentará mediante entrevistas y observación; no se asume de antemano que use registros manuales ni que presente fallas específicas.</p></article><article class="research-item"><p class="eyebrow orange-text">HIPÓTESIS DE TRABAJO</p><h3>Supuesto por contrastar</h3><p>Una gestión centralizada de clientes, planes, membresías y pagos podría facilitar la consulta de vigencias y el control de ingresos. La hipótesis se aceptará, ajustará o descartará según la evidencia recogida.</p></article></div>
+      <div class="objectives"><h3>Objetivos específicos</h3><ol><li>Documentar cómo el dueño y el personal registran clientes, planes, inscripciones y renovaciones.</li><li>Identificar la forma de recibir pagos, emitir comprobantes, autorizar ajustes y cerrar caja.</li><li>Definir qué información e indicadores necesita revisar el dueño sobre ingresos y membresías.</li><li>Modelar procesos, almacenes de datos, eventos y reglas mediante análisis estructurado.</li><li>Representar actores internos, permisos, clases y escenarios principales con UML.</li><li>Proponer un diseño que refleje el trabajo real de NitroFit y pueda validarse con su dueño.</li></ol></div>
+      <div class="method-box"><div><p class="eyebrow orange-text">MÉTODO</p><h3>Investigación aplicada y descriptiva</h3><p>Se observará el proceso de trabajo y se describirá cómo circula la información. El análisis se realizará en iteraciones: recopilar, modelar, contrastar con los usuarios y ajustar los diagramas.</p></div><div class="method-pills"><span>Entrevista semiestructurada</span><span>Observación directa</span><span>Revisión de formularios y registros</span><span>Validación de modelos con responsables</span></div></div>
+      <div class="scope-grid"><article><h3>Medios e instrumentos</h3><p>Entrevista al dueño, entrevista breve al personal de recepción, observación de inscripción y cierre de caja, revisión de formularios y recibos, y herramienta de diagramación UML/DFD.</p></article><article><h3>Justificación</h3><p>El dueño necesita consultar cuánto se cobró, qué operaciones integran el cierre y quién las registró; el personal necesita controlar vigencias y cobros sin perder el historial. El análisis permitirá acordar el alcance antes de implementar.</p></article><article><h3>Alcances y límites</h3><p>Incluye clientes como registros, planes, membresías, cobros recibidos, comprobantes internos, anulaciones o descuentos autorizados, asistencia opcional y caja diaria. No incluye portal de autoservicio, pasarela bancaria ni contabilidad fiscal completa.</p></article></div>
+    </section>
+<section class="section plan-section" id="planificacion">
+      <div class="section-heading"><p class="eyebrow orange-text">04 / PLANIFICACIÓN</p><h2>Avance por etapas,<br><em>con entregables claros.</em></h2><p>Calendario preliminar alineado con las fechas indicadas en la guía del proyecto.</p></div>
+      <div class="timeline">
+        <article><span class="phase">FASE 01</span><span class="date">AGOSTO 2026</span><h3>Inicio y delimitación</h3><p>Definir tema, equipo, alcance inicial y plan de investigación.</p><div class="deliverable">Entrega · hoja de datos y propuesta</div></article>
+        <article><span class="phase">FASE 02</span><span class="date">SEPTIEMBRE 2026</span><h3>Levantamiento</h3><p>Entrevistar, observar y describir el proceso actual. Validar el problema.</p><div class="deliverable">Entrega · diagnóstico y requisitos</div></article>
+        <article><span class="phase">FASE 03</span><span class="date">OCTUBRE 2026</span><h3>Modelado y publicación</h3><p>Construir modelos DFD y UML; publicar versiones iterativas del sitio.</p><div class="deliverable">Hito guía · publicación hasta 27–29 oct.</div></article>
+        <article><span class="phase">FASE 04</span><span class="date">NOVIEMBRE 2026</span><h3>Revisión y ajustes</h3><p>Revisar coherencia, completar diagramas, conclusiones y referencias.</p><div class="deliverable">Entrega · versión final revisada</div></article>
+        <article><span class="phase">FASE 05</span><span class="date">08–12 DIC. 2026</span><h3>Presentación y defensa</h3><p>Publicar URL final, preparar el documento impreso y exponer el proyecto.</p><div class="deliverable">Hito guía · entrega y defensa</div></article>
+      </div>
+      <p class="fine-print">Las fechas de agosto a noviembre son una planificación propuesta por el equipo; los hitos de publicación y defensa se tomaron de la guía de la asignatura.</p>
+    </section></main><footer><a class="footer-brand" href="index.html">NITRO<span>FIT</span></a><span>Proyecto académico · Gestión 2026</span><a href="equipo.html#equipo">Equipo auditor ↗</a></footer><script src="script.js"></script></body></html>
